@@ -1,0 +1,55 @@
+#include <stdio.h>
+/*
+凑硬币
+*/
+int main(void)
+{
+    //接力break
+    int x;
+    int one, two, five;
+    int exit = 0;
+
+    scanf("%d", &x);
+    for (one = 1; one < x * 10; one++)
+    {
+        for (two = 1; two < x * 10 / 2; two++)
+        {
+            for (five = 1; five < x * 10 / 5; five++)
+            {
+                if (one + two * 2 + five * 5 == x * 10)
+                {
+                    printf("可以用%d个1角加%d个2角加%d个五角得到%d元\n", one, two, five, x);
+                    exit = 1;
+                    break;//break和continue只能对它所在的那层循环做
+                }
+            }
+            if (exit == 1)
+                break;
+        }
+        if (exit == 1)
+            break;
+    }
+    /*
+    int x;
+    int one, two, five;
+    int exit = 0;
+
+    scanf("%d", &x);
+    for (one = 1; one < x * 10; one++)
+    {
+        for (two = 1; two < x * 10 / 2; two++)
+        {
+            for (five = 1; five < x * 10 / 5; five++)
+            {
+                if (one + two * 2 + five * 5 == x * 10)
+                {
+                    printf("可以用%d个1角加%d个2角加%d个五角得到%d元\n", one, two, five, x);
+                    goto out;//goto需要一个标号标号可自定义，一旦条件满足就会跳出循环直接到达标号所指的位置，建议使用场景多个嵌套循环需要直接跳出减少接力break
+                }
+            }
+        }
+    }
+out:
+*/
+    return 0;
+}
