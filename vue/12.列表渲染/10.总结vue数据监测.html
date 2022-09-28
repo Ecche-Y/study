@@ -4,11 +4,58 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<!--
+Vue监视数据的原理：
+
+vue会监视data中所有层次的数据
+
+如何监测对象中的数据？
+
+    通过setter实现监视，且要在new Vue时就传入要监测的数据。
+
+        对象中后追加的属性，Vue默认不做响应式处理
+
+        如需给后添加的属性做响应式，请使用如下API：
+
+            Vue.set(target，propertyName/index，value) 或
+
+            vm.$set(target，propertyName/index，value)
+
+如何监测数组中的数据？
+
+    通过包裹数组更新元素的方法实现，本质就是做了两件事：
+
+        调用原生对应的方法对数组进行更新
+        重新解析模板，进而更新页面
+
+在Vue修改数组中的某个元素一定要用如下方法：
+
+    使用这些API:push()、pop()、shift()、unshift()、splice()、sort()、reverse()
+    Vue.set() 或 vm.$set()
+
+特别注意：Vue.set() 和 vm.$set() 不能给vm 或 vm的根数据对象 添加属性！！！
+-->
 <body>
 <div id="box">
-    <h2>姓名{{student.name}}</h2>
-    <h2>年龄: 真实{{student.age.rAge}} 对外{{student.age.sAge}}</h2>
-    <h2 v-if="student.sex">性别：{{student.sex}}</h2>
+    <button @click="student.age++">年龄＋1</button>
+    <br>
+    <button @click="addSex">添加性别</button>
+    <br v-if="student.sex">
+    <button @click="student.sex= '女'" v-if="student.sex">修改性别</button>
+    <br>
+    <button @click="addFriends">在列表首位添加一个朋友</button>
+    <br>
+    <button @click="modOneFriends">修改第一个好友的姓名为张三</button>
+    <br>
+    <button @click="addHobby">添加一个爱好</button>
+    <br>
+    <button @click="modOneHobby">修改第一个爱好</button>
+    <br>
+    <button @click="delRap">删除rap爱好</button>
+    <hr>
+    <h2>姓名: {{student.name}}</h2>
+    <h2>年龄: {{student.age}}</h2>
+    <h2 v-if="student.sex">性别: {{student.sex}}</h2>
     <h2>爱好</h2>
     <ul>
         <li v-for="(h,index) in student.hobby" :key="index">
@@ -27,25 +74,41 @@
 <script src="../js/vue.js"></script>
 <script>
     const vm = new Vue({
-        el:'#box',
-        data:{
-            school: {
-                name: '杰哥',
-                address: '台北',
-                leader: '',
-            },
+        el: '#box',
+        data: {
             student: {
                 name: 'tom',
-                age: {
-                    rAge: 40,
-                    sAge: 29,
-                },
-                hobby: ['唱','跳','rap','篮球'],
+                age: 20,
+
+                hobby: ['唱', '跳', 'rap', '篮球'],
                 friends: [
                     {name: 'jerry', age: 35,},
                     {name: 'toy', age: 40,}
                 ]
             },
+        },
+        methods: {
+            addSex() {
+                this.$set(this.student, 'sex', '男')
+            },
+            addFriends() {
+                this.student.friends.unshift({name: '杰哥', age: 24})
+            },
+            modOneFriends() {
+                // this.student.friends.splice(0, 1, {name: '张三', age: 30})
+                this.student.friends[0].name = '张三'
+            },
+            addHobby() {
+                this.student.hobby.push('音乐')
+            },
+            modOneHobby() {
+                this.student.hobby.splice(0, 1, '开车')
+            },
+            delRap() {
+                this.student.hobby = this.student.hobby.filter((h) => {
+                    return h !== 'rap'
+                })
+            }
         }
     })
 </script>
