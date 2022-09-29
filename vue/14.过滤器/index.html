@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<!--
+定义：对要显示的数据进行特定格式化后再显示（适用于一些简单逻辑的处理）。
+
+语法：
+注册过滤器：Vue.filter(name,callback) 或 new Vue{filters:{}}
+使用过滤器：{{ xxx | 过滤器名}}  或  v-bind:属性 = "xxx | 过滤器名"
+
+备注：
+1.过滤器也可以接收额外参数、多个过滤器也可以串联
+2.并没有改变原本的数据, 是产生新的对应的数据
+-->
 <body>
 <div id="box">
     <h2>显示格式化后的时间</h2>
@@ -13,16 +24,29 @@
     <h3>现在是：{{getFmtTime()}}</h3>
     <!--过滤器实现-->
     <h3>现在是：{{time | timeFormater}}</h3>
+    <!--过滤器实现(传参)-->
+    <h3>现在是：{{time | timeFormater('YYYY_MM_DD') | mySlice}}</h3>
+
+    <h3 :x="msg | mySlice">稍后给您</h3>
+</div>
+<div id="box2">
+    {{name | mySlice}}
 </div>
 </body>
 </html>
 <script src="../js/vue.js"></script>
 <script src="../js/dayjs.min.js"></script>
 <script>
+    //全局作用域
+    Vue.filter('mySlice', function (value) {
+        return value.slice(0, 4)
+    })
+
     const vm = new Vue({
         el: '#box',
         data: {
             time: 1664417421864,
+            msg: '那块i蒋经国'
         },
         computed: {
             fmtTime() {
@@ -34,11 +58,18 @@
                 return dayjs(this.time).format('YYYY年MM月DD日 HH:mm:ss')
             }
         },
-        filters:{
-            timeFormater(value){
+        //局部过滤器
+        filters: {
+            timeFormater(value, str = 'YYYY年MM月DD日 HH:mm:ss') {
                 // console.log('@',value);
-                return  dayjs(value).format('YYYY年MM月DD日 HH:mm:ss')
+                return dayjs(value).format(str)
             }
+        }
+    });
+    new Vue({
+        el: '#box2',
+        data: {
+            name: '1145141919810'
         }
     })
 </script>
