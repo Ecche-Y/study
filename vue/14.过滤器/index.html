@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <h2>显示格式化后的时间</h2>
+    <!--计算属性实现-->
+    <h3>现在是：{{fmtTime}}</h3>
+    <!--methods实现-->
+    <h3>现在是：{{getFmtTime()}}</h3>
+    <!--过滤器实现-->
+    <h3>现在是：{{time | timeFormater}}</h3>
+</div>
+</body>
+</html>
+<script src="../js/vue.js"></script>
+<script src="../js/dayjs.min.js"></script>
+<script>
+    const vm = new Vue({
+        el: '#box',
+        data: {
+            time: 1664417421864,
+        },
+        computed: {
+            fmtTime() {
+                return dayjs(this.time).format('YYYY年MM月DD日 HH:mm:ss')
+            }
+        },
+        methods: {
+            getFmtTime() {
+                return dayjs(this.time).format('YYYY年MM月DD日 HH:mm:ss')
+            }
+        },
+        filters:{
+            timeFormater(value){
+                // console.log('@',value);
+                return  dayjs(value).format('YYYY年MM月DD日 HH:mm:ss')
+            }
+        }
+    })
+</script>
