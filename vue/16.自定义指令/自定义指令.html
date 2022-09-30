@@ -5,6 +5,33 @@
     <title>Title</title>
 </head>
 <body>
-
+<!--
+需求1：定义一个v-big指令，和v-text功能类似，但会把绑定的数值放大10倍。
+需求2：定义一个v-fbind指令，和v-bind功能类似，但可以让其所绑定的input元素默认获取焦点。
+-->
+<div id="box">
+    <h2>当前的N值是： <span v-text="n"></span></h2>
+    <h2>10倍的N值是：<span v-big="n"></span></h2>
+    <button @click="n++">点击N+1</button>
+</div>
 </body>
 </html>
+<script src="../js/vue.js"></script>
+<script>
+    new Vue({
+        el:'#box',
+        data:{
+            n:1,
+        },
+        directives:{
+            /*
+            big函数何时会被调用？
+                1.指令与元素绑定成功时(一开始)
+                2.指令所在的模板被重新解析时
+            */
+            big(element,binding){
+                element.innerText = binding.value * 10
+            }
+        }
+    })
+</script>
