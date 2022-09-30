@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<!--
+v-text指令：(使用的比较少)
+
+1.作用：向其所在的节点中渲染文本内容 。
+
+2.与插值语法的区别：v-text会替换掉节点中的内容，{{xx}}则不会。
+-->
 <body>
 <div id="box">
-
+    <div>{{name}}</div>
+    <div v-text="scr"></div>
 </div>
 </body>
 </html>
@@ -15,7 +23,8 @@
     new Vue({
         el:'#box',
         data:{
-
+            name:'杰哥',
+            scr:'<h2>阿伟</h2>'//会将''里的内容全部当作字符串显示，且无法在div标签内输出任何内容
         }
     })
 </script>

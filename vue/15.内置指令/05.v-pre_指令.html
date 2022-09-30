@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--
+v-pre指令：(比较没用)
+
+    跳过其所在节点的编译过程
+    可利用它跳过：没有使用指令语法、没有使用插值语法的节点，会加快编译
+-->
+<body>
+<div id="box">
+    <div v-pre>vue其实很简单</div>
+    <div v-pre>当前的N值{{n}}</div>
+    <button v-pre a="1" @click="n++">点击N+1</button>
+</div>
+</body>
+</html>
+<script src="../js/vue.js"></script>
+<script>
+    new Vue({
+        el:'#box',
+        data:{
+            n:1,
+        }
+    })
+</script>
