@@ -8,9 +8,29 @@
 <!--
 需求1：定义一个v-big指令，和v-text功能类似，但会把绑定的数值放大10倍。
 需求2：定义一个v-fbind指令，和v-bind功能类似，但可以让其所绑定的input元素默认获取焦点。
+
+总结：
+    一、定义语法：
+        局部指令：
+            new Vue({                               new Vue({
+                directives:{指令名:配置对象}   或           directives{指令名:回调函数}
+            })                                      })
+
+        全局指令：
+            Vue.directive(指令名:配置对象)     或       Vue.directive(指令名，回调函数)
+
+    二、配置对象中常用的3个回调：
+        bind：指令与元素成功绑定时调用。
+        inserted：指令所在元素被插入页面时调用。
+        update：指令所在模板结构被重新解析时调用。
+
+    三、备注：
+        指令名定义时不加v-,使用时要加v-;
+        指令名如果时多个单词,要使用kebab-case命名方式，不要用camelName命名
 -->
 <div id="box">
     <h2>当前的N值是： <span v-text="n"></span></h2>
+    <!--<h2>10倍的N值是：<span v-big-number="n"></span></h2>-->
     <h2>10倍的N值是：<span v-big="n"></span></h2>
     <button @click="n++">点击N+1</button>
     <hr>
@@ -20,6 +40,22 @@
 </html>
 <script src="../js/vue.js"></script>
 <script>
+    //全局指令
+    /*Vue.directive('fbind', {
+        // 指令与元素成功绑定时（一上来）
+        bind(element, binding){
+            element.value = binding.value
+        },
+        // 指令所在元素被插入页面时
+        inserted(element, binding){
+            element.focus()
+        },
+        // 指令所在的模板被重新解析时
+        update(element, binding){
+            element.value = binding.value
+        }
+    })*/
+
     new Vue({
         el: '#box',
         data: {
@@ -31,6 +67,9 @@
                 1.指令与元素绑定成功时(一开始)
                 2.指令所在的模板被重新解析时
             */
+            /*'big-number'(element, binding) {
+                element.innerText = binding.value * 10
+            },*/
             big(element, binding) {
                 element.innerText = binding.value * 10
             },
