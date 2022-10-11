@@ -7,6 +7,8 @@
 <body>
 <div id="box">
     <h2 :style="{opacity}">我家还蛮大的</h2>
+    <button @click="opacity=1">透明度设置成1</button>
+    <button @click="stop">点击停止定时器</button>
 </div>
 </body>
 </html>
@@ -18,14 +20,23 @@
             a: false,
             opacity: 1,
         },
+        methods:{
+            stop(){
+                this.$destroy()
+            }
+        },
         mounted() {
             console.log("mounted", this);
-            setInterval(() => {
+            this.timer = setInterval(() => {
+                console.log("timer");
                 this.opacity -= 0.01;
                 if (this.opacity <= 0) {
                     this.opacity = 1;
                 }
             }, 16)
+        },
+        beforeDestroy() {
+            clearInterval(this.timer);
         }
     })
 </script>
