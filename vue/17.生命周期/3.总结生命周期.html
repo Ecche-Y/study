@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <h2 :style="{opacity}">我家还蛮大的</h2>
+</div>
+</body>
+</html>
+<script src="../js/vue.js"></script>
+<script>
+    new Vue({
+        el: '#box',
+        data: {
+            a: false,
+            opacity: 1,
+        },
+        mounted() {
+            console.log("mounted", this);
+            setInterval(() => {
+                this.opacity -= 0.01;
+                if (this.opacity <= 0) {
+                    this.opacity = 1;
+                }
+            }, 16)
+        }
+    })
+</script>

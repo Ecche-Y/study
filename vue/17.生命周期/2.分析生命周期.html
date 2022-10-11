@@ -6,6 +6,7 @@
 </head>
 <body>
 <div id="box">
+    <h1 v-text="n"></h1>
     <h1>当前N的值{{n}}</h1>
     <button @click="add">点击N+1</button>
     <button @click="del">点击销毁vm</button>
@@ -27,11 +28,17 @@
         },
         methods: {
             add() {
+                console.log('add');
                 this.n++;
             },
-            del(){
+            del() {
                 console.log("del");
                 this.$destroy();
+            },
+        },
+        watch: {
+            n() {
+                console.log('n变了');
             }
         },
         beforeCreate() {
@@ -48,11 +55,17 @@
             // console.log(this);
             // document.querySelector('h1').innerText = 1234;
         },
-        beforeUpdate(){
+        beforeUpdate() {
             console.log("beforeUpdate");
         },
-        updated(){
+        updated() {
             console.log("undated");
+        },
+        beforeDestroy() {
+            console.log('beforeDestroy');
+        },
+        destroy() {
+            console.log('destroy');
         }
     })
 </script>
