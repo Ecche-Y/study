@@ -8,20 +8,51 @@
 <div id="box">
     <h1>当前N的值{{n}}</h1>
     <button @click="add">点击N+1</button>
+    <button @click="del">点击销毁vm</button>
 </div>
 </body>
 </html>
 <script src="../js/vue.js"></script>
 <script !src="">
     new Vue({
-        el:'#box',
-        data:{
-            n:1,
+        el: '#box',
+        /*template:`
+            <div>
+                <h1>当前N的值{{n}}</h1>
+                <button @click="add">点击N+1</button>
+            </div>
+        `,*/
+        data: {
+            n: 1,
         },
-        methods:{
-            add(){
-                this.n++
+        methods: {
+            add() {
+                this.n++;
+            },
+            del(){
+                console.log("del");
+                this.$destroy();
             }
+        },
+        beforeCreate() {
+            console.log("beforeCreate");
+        },
+        created() {
+            console.log("created");
+        },
+        beforeMount() {
+            console.log("beforeMount");
+        },
+        mounted() {
+            console.log("mounted");
+            // console.log(this);
+            // document.querySelector('h1').innerText = 1234;
+        },
+        beforeUpdate(){
+            console.log("beforeUpdate");
+        },
+        updated(){
+            console.log("undated");
         }
     })
 </script>
