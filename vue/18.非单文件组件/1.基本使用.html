@@ -6,20 +6,93 @@
 </head>
 <body>
 <div id="box">
-    <h2>学校名称：{{name}}</h2>
-    <h2>学校地址：{{address}}</h2>
+    <hello></hello>
     <hr>
-    <h2>学生名字：{{name}}</h2>
-    <h2>学生年龄：{{age}}</h2>
+    <h1>{{mag}}</h1>
+    <hr>
+    <!--第三步:编写组件标签-->
+    <school></school>
+    <hr>
+    <!--第三步:编写组件标签-->
+    <students></students>
+</div>
+<div id="box2">
+    <hello></hello>
 </div>
 </body>
 </html>
 <script src="../js/vue.js"></script>
 <script>
+    //第一步:创建school组件
+    const school = Vue.extend({
+        //el:'#box',//组件定义时，一定不要写el配置项，因为最终所有的组件都要被一个vm管理，由vm决定服务于哪个容器
+        template: `
+            <div>
+            <h2>学校名称：{{ schoolName }}</h2>
+            <h2>学校地址：{{ address }}</h2>
+            <button @click="showName">点击提示学校名称</button>
+            </div>
+        `,
+        data() {
+            return {
+                schoolName: '福建水电学院',
+                address: '福建永安',
+            }
+        },
+        methods:{
+            showName(){
+                alert(this.schoolName)
+            }
+        }
+    })
+
+    //第一步:创建students组件
+    const students = Vue.extend({
+        template: `
+            <div>
+            <h2>学生名字：{{ studentName }}</h2>
+            <h2>学生年龄：{{ age }}</h2>
+            </div>
+        `,
+        data() {
+            return {
+                studentName: '张三',
+                age: 18,
+            }
+        }
+    })
+
+    //第一步:创建hello组件
+    const hello = Vue.extend({
+        template:`
+            <div>
+            <h1>{{mag}}</h1>
+            </div>
+        `,
+        data(){
+            return{
+                mag:'helloTom',
+            }
+        }
+    })
+
+    //第二步:注册组件(全局注册)
+    Vue.component('hello',hello)//组件名字，组件位置
+
+    //创建vm
     new Vue({
         el: '#box',
-        data: {
-
+        data:{
+            mag:'helloWorld',
+        },
+        //第二步：注册组件(局部注册)
+        components: {
+            school,
+            students,
         }
+    })
+
+    new Vue({
+        el:'#box2'
     })
 </script>
