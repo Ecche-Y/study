@@ -59,8 +59,8 @@ Vue中使用组件的三大步骤：
                 address: '福建永安',
             }
         },
-        methods:{
-            showName(){
+        methods: {
+            showName() {
                 alert(this.schoolName)
             }
         }
@@ -84,26 +84,26 @@ Vue中使用组件的三大步骤：
 
     //第一步:创建hello组件
     const hello = Vue.extend({
-        template:`
+        template: `
             <div>
-            <h1>{{mag}}</h1>
+            <h1>{{ mag }}</h1>
             </div>
         `,
-        data(){
-            return{
-                mag:'helloTom',
+        data() {
+            return {
+                mag: 'helloTom',
             }
         }
     })
 
     //第二步:注册组件(全局注册)
-    Vue.component('hello',hello)//组件名字，组件位置
+    Vue.component('hello', hello)//组件名字，组件位置
 
     //创建vm
     new Vue({
         el: '#box',
-        data:{
-            mag:'helloWorld',
+        data: {
+            mag: 'helloWorld',
         },
         //第二步：注册组件(局部注册)
         components: {
@@ -113,6 +113,6 @@ Vue中使用组件的三大步骤：
     })
 
     new Vue({
-        el:'#box2'
+        el: '#box2'
     })
 </script>

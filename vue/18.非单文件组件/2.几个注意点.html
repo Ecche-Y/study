@@ -5,6 +5,37 @@
     <title>Title</title>
 </head>
 <body>
-
+<div id="box">
+    <my-school></my-school>
+</div>
 </body>
 </html>
+<script src="../js/vue.js"></script>
+<script>
+    //定义组件
+    const s = Vue.extend({
+        template: `
+            <div>
+            <h2>学校名称：{{ name }}</h2>
+            <h2>学校地址：{{ address }}</h2>
+            </div>
+        `,
+        data() {
+            return {
+                name: '福建水院',
+                address: '三明永安'
+            }
+        }
+    })
+
+    //注册组件
+    new Vue({
+        el: '#box',
+        data: {
+
+        },
+        components:{
+            'my-school':s,
+        }
+    })
+</script>
