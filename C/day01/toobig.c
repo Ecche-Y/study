@@ -12,6 +12,7 @@ int main(void){
      而int类型的变量i则是从-2147483648开始
 
      */
+     
     printf("%d %d %d\n",i, i+1, i+2);
     printf("%u %u %u",j, j+1, j+2);
 
