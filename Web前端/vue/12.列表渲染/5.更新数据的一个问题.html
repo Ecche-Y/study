@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <h2>人员列表</h2>
+    <button @click="update">更新马冬梅信息</button>
+    <ul>
+        <li v-for="(p,index) of persons" :key="p.id">
+            {{p.name}}-{{p.age}}-{{p.sex}}
+        </li>
+    </ul>
+</div>
+</body>
+</html>
+<script src="../js/vue.js"></script>
+<script>
+    Vue.config.productionTip=false;
+
+    const vm = new Vue({
+        el:'#box',
+        data: {
+            keyWord: '',
+            sorType: 0,//0原顺序，1降序，2升序
+            persons: [
+                {id: '01', name: '马冬梅', age: 24, sex: '女'},
+                {id: '02', name: '周冬雨', age: 16, sex: '女'},
+                {id: '03', name: '周杰伦', age: 35, sex: '男'},
+                {id: '04', name: '温兆伦', age: 40, sex: '男'},
+            ]
+        },
+        methods:{
+            update(){
+                // this.persons[0].name = '杰哥'; //能用
+                // this.persons[0].age = '22';  //能用
+                // this.persons[0].sex = '男';   //能用
+                // this.persons[0]={id: '01', name: '杰哥', age: 23, sex: '男'} //不太行
+                // vm._data.student.hobby.splice(下标,个数,修改的内容)
+                this.persons.splice(0,1,{id: '01', name: '杰哥', age: 23, sex: '男'})
+            }
+        }
+    })
+</script>

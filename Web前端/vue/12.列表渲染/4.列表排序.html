@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <h2>人员列表</h2>
+    <input type="text" placeholder="请输入名字" v-model="keyWord">
+    <button @click="sorType = 2">年龄升序</button>
+    <button @click="sorType = 1">年龄降序</button>
+    <button @click="sorType = 0">原顺序</button>
+    <ul>
+        <li v-for="(p,index) of filPerons" :key="p.id">
+            {{p.name}}-{{p.age}}-{{p.sex}}
+            <input>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
+<script src="../js/vue.js"></script>
+<script>
+    Vue.config.productionTip=false;
+
+    new Vue({
+        el:'#box',
+        data: {
+            keyWord: '',
+            sorType: 0,//0原顺序，1降序，2升序
+            persons: [
+                {id: '01', name: '马冬梅', age: 24, sex: '女'},
+                {id: '02', name: '周冬雨', age: 16, sex: '女'},
+                {id: '03', name: '周杰伦', age: 35, sex: '男'},
+                {id: '04', name: '温兆伦', age: 40, sex: '男'},
+            ]
+        },
+        computed: {
+            filPerons() {
+                const arr = this.persons.filter((p) => {
+                    return p.name.indexOf(this.keyWord) !== -1
+                })
+                if (this.sorType) {
+                    arr.sort((p1, p2) => {
+                        return this.sorType == 1 ? p2.age - p1.age : p1.age - p2.age
+                    })
+                }
+                return arr;
+            }
+        }
+    })
+</script>

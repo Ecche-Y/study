@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--
+v-if
+写法：
+    (1).v-if="表达式"
+    (2).v-else-if="表达式"
+    (3).v-else="表达式"
+
+适用于：切换频率较低的场景
+特点：不展示的DOM元素直接被移除
+注意：v-if可以和:v-else-if、v-else一起使用，但要求结构不能被“打断”
+
+v-show
+
+写法：v-show="表达式"
+适用于：切换频率较高的场景
+特点：不展示的DOM元素未被移除，仅仅是使用样式隐藏掉(display:none)
+
+备注：使用v-if的时，元素可能无法获取到，而使用v-show一定可以获取到
+v-if 是实打实地改变dom元素，v-show 是隐藏或显示dom元素
+-->
+<body>
+<div id="box">
+    <h2>当前的N值是:{{n}}</h2>
+    <button @click="n++">N+1</button>
+    <!--使用v-show做条件渲染-->
+    <!--<h2 v-show="false">{{name}}</h2>-->
+    <!--<h2 v-show="1 === 1">{{name}}</h2>-->
+
+    <!--使用v-if做条件渲染-->
+    <!--<h2 v-if="false">{{name}}</h2>-->
+    <!--<h2 v-if="1 === 1">{{name}}</h2>-->
+
+    <!--v-else-if,v-else使用方式,必须挨在一块写不能中断-->
+    <!--<div v-if="n === 1">Angular</div>
+    <div v-else-if="n === 2">React</div>
+    <div v-else-if="n === 3">Vue</div>
+    <div v-else>666</div>-->
+
+    <!--template只能和v-if配合使用，无法使用v-show-->
+    <template v-if="n === 1">
+        <h2>114</h2>
+        <h2>514</h2>
+        <h2>1919</h2>
+    </template>
+
+</div>
+</body>
+</html>
+<script src="../js/vue.js"></script>
+<script>
+    Vue.config.productionTip = false;
+
+    const vm = new Vue({
+        el:'#box',
+        data:{
+            n:0,
+            name:'杰哥',
+        }
+    })
+</script>
