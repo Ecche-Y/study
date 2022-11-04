@@ -214,11 +214,11 @@ build bool.exe: C_EXECUTABLE_LINKER__bool_Debug CMakeFiles/bool.dir/bool/bool.c.
 
 build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
 
-build CMakeFiles/main.dir/arrays/main.c.obj: C_COMPILER__main_Debug D$:/Study/C/arrays/main.c || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles\main.dir\arrays\main.c.obj.d
+build CMakeFiles/main.dir/switch-case/main.c.obj: C_COMPILER__main_Debug D$:/Study/C/switch-case/main.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\switch-case\main.c.obj.d
   FLAGS = -g -std=gnu2x
   OBJECT_DIR = CMakeFiles\main.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.dir\arrays
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\switch-case
 
 
 # =============================================================================
@@ -228,7 +228,7 @@ build CMakeFiles/main.dir/arrays/main.c.obj: C_COMPILER__main_Debug D$:/Study/C/
 #############################################
 # Link the executable main.exe
 
-build main.exe: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/arrays/main.c.obj
+build main.exe: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/switch-case/main.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\main.dir
@@ -337,6 +337,39 @@ build sum.exe: C_EXECUTABLE_LINKER__sum_Debug CMakeFiles/sum.dir/LoopControl/Exa
   TARGET_IMPLIB = libsum.dll.a
   TARGET_PDB = sum.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target doWhile
+
+
+#############################################
+# Order-only phony target for doWhile
+
+build cmake_object_order_depends_target_doWhile: phony || CMakeFiles/doWhile.dir
+
+build CMakeFiles/doWhile.dir/LoopControl/doWhile/doWhile.c.obj: C_COMPILER__doWhile_Debug D$:/Study/C/LoopControl/doWhile/doWhile.c || cmake_object_order_depends_target_doWhile
+  DEP_FILE = CMakeFiles\doWhile.dir\LoopControl\doWhile\doWhile.c.obj.d
+  FLAGS = -g -std=gnu2x
+  OBJECT_DIR = CMakeFiles\doWhile.dir
+  OBJECT_FILE_DIR = CMakeFiles\doWhile.dir\LoopControl\doWhile
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target doWhile
+
+
+#############################################
+# Link the executable doWhile.exe
+
+build doWhile.exe: C_EXECUTABLE_LINKER__doWhile_Debug CMakeFiles/doWhile.dir/LoopControl/doWhile/doWhile.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\doWhile.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = doWhile.exe
+  TARGET_IMPLIB = libdoWhile.dll.a
+  TARGET_PDB = doWhile.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -369,6 +402,8 @@ build bool: phony bool.exe
 
 build coin: phony coin.exe
 
+build doWhile: phony doWhile.exe
+
 build for: phony for.exe
 
 build intDecomposition: phony intDecomposition.exe
@@ -389,7 +424,7 @@ build test: phony test.exe
 #############################################
 # Folder: D:/Study/C/cmake-build-debug
 
-build all: phony for.exe sum2.exe coin.exe intDecomposition.exe bool.exe main.exe test.exe Hash.exe sum.exe
+build all: phony for.exe sum2.exe coin.exe intDecomposition.exe bool.exe main.exe test.exe Hash.exe sum.exe doWhile.exe
 
 # =============================================================================
 # Built-in targets

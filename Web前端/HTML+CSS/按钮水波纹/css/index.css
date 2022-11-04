@@ -1,0 +1,75 @@
+* {
+    /*常规初始化*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*常规居中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*元素间距*/
+    gap: 4vmin;
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: black;
+}
+
+button {
+    /*超出按钮部分隐藏*/
+    overflow: hidden;
+    /*padding扩大按钮*/
+    padding: 4vmin 8vmin;
+    /*去掉按钮边框，添加圆角边框*/
+    border: none;
+    border-radius: 10vmin;
+    /*按钮渐变背景*/
+    background-image: linear-gradient(90deg, #0acffe, #495aff);
+    /*文字样式*/
+    color: #fff; /*颜色*/
+    font-size: 6vmin; /*字号*/
+    font-weight: bold; /*粗细*/
+    letter-spacing: 1vmin; /*间距*/
+    /*鼠标经过事件*/
+    cursor: pointer;
+    position: relative;
+}
+
+button:nth-child(2) {
+    /*第二个按钮颜色*/
+    background-image: linear-gradient(90deg, deeppink, red);
+}
+
+button span {
+    /*水波纹背景颜色*/
+    background-color: white;
+    /*水波纹纯圆形*/
+    border-radius: 50%;
+    /*取消水波纹元素对鼠标点击事件干扰*/
+    pointer-events: none;
+
+    /*定位、left、top的值通过JS定义*/
+    position: absolute;
+    /*圆中心*/
+    transform: translate(-50%, -50%);
+
+    /*水波纹扩散动画*/
+    animation: animate 1s ease-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.5;
+    }
+    100% {
+        /*从最初宽高为 0，扩散到很大的一个圆，模仿水波纹效果*/
+        width: 100vmin;
+        height: 100vmin;
+        /*元素慢慢变淡，最后消失*/
+        opacity: 0;
+    }
+}

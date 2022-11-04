@@ -1,4 +1,4 @@
 ToolSet: w64 8.0 (local)@D:\TDM-GCC-64
 Options: 
 
-Options:
+Options:-DCMAKE_MAKE_PROGRAM=D:/Program Files/JetBrains/apps/CLion/ch-0/222.4345.21/bin/ninja/win/ninja.exe

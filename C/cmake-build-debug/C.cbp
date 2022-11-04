@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="C"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="for">
+				<Option output="E:/Study/C/cmake-build-debug/for.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 for"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="for/fast">
+				<Option output="E:/Study/C/cmake-build-debug/for.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 for/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sum2">
+				<Option output="E:/Study/C/cmake-build-debug/sum2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 sum2"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sum2/fast">
+				<Option output="E:/Study/C/cmake-build-debug/sum2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 sum2/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="coin">
+				<Option output="E:/Study/C/cmake-build-debug/coin.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 coin"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="coin/fast">
+				<Option output="E:/Study/C/cmake-build-debug/coin.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 coin/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="intDecomposition">
+				<Option output="E:/Study/C/cmake-build-debug/intDecomposition.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 intDecomposition"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="intDecomposition/fast">
+				<Option output="E:/Study/C/cmake-build-debug/intDecomposition.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 intDecomposition/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bool">
+				<Option output="E:/Study/C/cmake-build-debug/bool.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 bool"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bool/fast">
+				<Option output="E:/Study/C/cmake-build-debug/bool.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 bool/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main">
+				<Option output="E:/Study/C/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main/fast">
+				<Option output="E:/Study/C/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option output="E:/Study/C/cmake-build-debug/test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test/fast">
+				<Option output="E:/Study/C/cmake-build-debug/test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Hash">
+				<Option output="E:/Study/C/cmake-build-debug/Hash.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 Hash"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Hash/fast">
+				<Option output="E:/Study/C/cmake-build-debug/Hash.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 Hash/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sum">
+				<Option output="E:/Study/C/cmake-build-debug/sum.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 sum"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sum/fast">
+				<Option output="E:/Study/C/cmake-build-debug/sum.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 sum/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/Study/C/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/Study/C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/Study/C/LoopControl/Examples/coin.c">
+			<Option target="coin"/>
+		</Unit>
+		<Unit filename="E:/Study/C/LoopControl/Examples/intDecomposition.c">
+			<Option target="intDecomposition"/>
+		</Unit>
+		<Unit filename="E:/Study/C/LoopControl/Examples/sum.c">
+			<Option target="sum"/>
+		</Unit>
+		<Unit filename="E:/Study/C/LoopControl/Examples/sum2.c">
+			<Option target="sum2"/>
+		</Unit>
+		<Unit filename="E:/Study/C/LoopControl/for/for.c">
+			<Option target="for"/>
+		</Unit>
+		<Unit filename="E:/Study/C/arrays/Examples/Hash.c">
+			<Option target="Hash"/>
+		</Unit>
+		<Unit filename="E:/Study/C/arrays/main.c">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="E:/Study/C/arrays/test.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="E:/Study/C/bool/bool.c">
+			<Option target="bool"/>
+		</Unit>
+		<Unit filename="E:/Study/C/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
