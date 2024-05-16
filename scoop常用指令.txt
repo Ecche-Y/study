@@ -1,0 +1,18 @@
+scoop help #查看帮助
+scoop help <某个命令> # 具体查看某个命令的帮助
+
+scoop install <app>   # 安装 APP
+scoop uinstall <app>  # 卸载 APP
+
+scoop list  # 列出已安装的 APP
+scoop search # 搜索 APP
+scoop status # 检查哪些软件有更新
+
+scoop update # 更新 Scoop 自身
+scoop update appName1 appName2 # 更新某些app
+scoop update *  # 更新所有 app （前提是需要在apps目录下操作）
+
+scoop bucket known #通过此命令列出已知所有 bucket（软件源）
+scoop bucket add bucketName #添加某个 bucket
+
+scoop cache rm <app> # 移除某个app的缓存
